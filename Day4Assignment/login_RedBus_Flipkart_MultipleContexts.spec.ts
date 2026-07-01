@@ -1,4 +1,4 @@
-import {test,chromium,webkit } from "@playwright/test";
+import {test,chromium,firefox } from "@playwright/test";
 
 test("Red Bus in Edge Browser Instances",async ()=>{
     const browserInstance = await chromium.launch({headless:false,channel:"msedge"});
@@ -13,7 +13,7 @@ test("Red Bus in Edge Browser Instances",async ()=>{
 
 });
 test("Flipkart in Firefox Browser Instances",async()=>{
-   const browserInstance = await webkit.launch({headless:false});
+   const browserInstance = await firefox.launch({headless:false});
    const browserContext  = await browserInstance.newContext();
    const page = await browserContext.newPage();
 
