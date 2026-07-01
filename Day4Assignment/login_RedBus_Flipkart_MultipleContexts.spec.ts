@@ -18,7 +18,7 @@ test("Flipkart in Firefox Browser Instances",async()=>{
    const page = await browserContext.newPage();
 
    await page.goto("https://www.flipkart.com/");
-   const url = await page.url();
+   const url = page.url();
    console.log(`URL of Flipkart Website is ${url}`);
    const title = await page.title();
    console.log(`Title of Flipkart Website is ${title}`);
