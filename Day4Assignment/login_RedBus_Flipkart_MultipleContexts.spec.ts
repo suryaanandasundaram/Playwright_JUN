@@ -9,7 +9,7 @@ test("Red Bus in Edge Browser Instances",async ()=>{
     const url = page.url();
     console.log(`URL of RedBus Website is ${url}`);
     const title = await page.title();
-    console.log(`Title of RedBus WebSite is  ${title}`);
+    console.log(`Title of RedBus Website is  ${title}`);
 
 });
 test("Flipkart in Firefox Browser Instances",async()=>{
