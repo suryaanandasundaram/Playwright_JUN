@@ -1,3 +1,0 @@
-interface PageRules {
-     verifyPage(): void
-}
